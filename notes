@@ -1,0 +1,4 @@
+
+npm install styled-components @reduxjs/toolkit react-redux
+npm install @mui/icons-material
+npm install @mui/material @emotion/react @emotion/styled
