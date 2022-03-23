@@ -10,9 +10,5 @@ export const GlobalStyles = createGlobalStyle`
             margin-top:5px;
             margin-bottom:15px;
         }
-        & body{
-            width: 100vw;
-            height:100vh;
-        }
     }
 `;

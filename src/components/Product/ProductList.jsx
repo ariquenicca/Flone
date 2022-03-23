@@ -1,16 +1,17 @@
 import { useSelector } from "react-redux";
-import { ProductItem } from "./ProductItem.style";
+import { StyledProductList } from "./Product.style";
+import ProductItem from "./ProductItem";
 
-const ProductList = ({ className }) => {
-  var { products } = useSelector((state) => state.product);
-  return (
-    <div className={className}>
-      {products &&
-        products.map((product) => (
-          <ProductItem data={product} key={product.id} />
-        ))}
-    </div>
-  );
+const ProductList = () => {
+    var { products } = useSelector((state) => state.product);
+    return (
+        <StyledProductList>
+            {products &&
+                products.map((product) => (
+                    <ProductItem data={product} key={product.id} />
+                ))}
+        </StyledProductList>
+    );
 };
 
 export default ProductList;
