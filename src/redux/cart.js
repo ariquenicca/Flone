@@ -34,7 +34,8 @@ export const cartSlice = createSlice({
         },
         updateCartCount: (state, action) => {
             let id = action.payload.id;
-            let value = action.payload.value;
+            let value = parseInt(action.payload.value);
+            console.log(value);
 
             state.cartItems = state.cartItems.map((item) =>
                 item.id == id ? { ...item, count: value } : item

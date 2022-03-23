@@ -13,7 +13,7 @@ function FashionMen() {
                 <p>Choose Your Products Here</p>
                 <br />
                 <a href="">
-                    <ArrowRightAltIcon font-size="small" />
+                    <ArrowRightAltIcon fontSize="small" />
                 </a>
             </FashionTextContainer>
         </FashionSubContainer>
